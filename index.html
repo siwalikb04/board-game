@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+  <link rel="stylesheet" href="./start_page/start.css">
+  <title>Start</title>
+</head>
+<body>
+    <section> 
+        <div class="form-box">
+            <div class="form-value">
+                <form action="./game/game.htm">
+                    <h2>Let's Start</h2>
+                    <div id="p1" class="inputbox">
+                        <ion-icon name="id-card" aria-label="RED"></ion-icon>
+                        <input id="p1Name" type="text" autocomplete="on" required>
+                        <label>Player 1 Name:</label>
+                    </div>
+                    <div id="p2" class="inputbox">
+                        <ion-icon name="id-card" aria-level="BLUE"></ion-icon>
+                        <input id="p2Name" type="text" autocomplete="on" required>
+                        <label>Player 2 Name: </label>
+                    </div>
+                    <div class="default">
+                        <ion-checkbox label-placement="end">Keep Default Names</ion-checkbox>
+                    </div>
+                    <button type="submit" onclick="assignNames()">Let's Begin</button>
+                    <div class="help">
+                        <p>Don't know how to play? <a href="./information.html"><em>How to Play</em></a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./start_page/start.js"></script>
+</body>
+</html>

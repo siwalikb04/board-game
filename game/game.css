@@ -1,0 +1,19 @@
+@media (min-width: 768px){
+    .flex-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+}
+@media (max-width:767px) {
+    .flex-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.blurred-image {
+    filter: blur(5px);
+  }
+  
